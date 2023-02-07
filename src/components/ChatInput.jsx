@@ -15,7 +15,7 @@ const ChatInput = ({ sendMessage, loading }) => {
     py-4 overflow-auto relative"
     >
       {loading ? (
-        <img src="./assets/loader.gif" className="w-8 m-auto" />
+        <img src="https://firebasestorage.googleapis.com/v0/b/teste-5e945.appspot.com/o/Logos%2Floader.gif?alt=media&token=187980e2-bd25-4262-b6b7-64d3e22df0ec" className="w-8 m-auto" />
       ) : (
         <>
           <textarea
@@ -31,12 +31,12 @@ const ChatInput = ({ sendMessage, loading }) => {
 
           <img
             onClick={handleSubmit}
-            src="./assets/send.png"
+            src="https://firebasestorage.googleapis.com/v0/b/teste-5e945.appspot.com/o/Logos%2Fsend.png?alt=media&token=3f2fd8ea-ebb0-4115-937b-58138ee4b5cb"
             width={20}
             alt="send-button"
             className="absolute top-4
-        right-3 hover:cursor-pointer ease-in duration-100 hover:scale-125
-        "
+            right-3 hover:cursor-pointer ease-in duration-100 hover:scale-125
+            "
           />
         </>
       )}

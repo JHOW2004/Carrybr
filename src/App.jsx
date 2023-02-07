@@ -31,16 +31,11 @@ function App() {
       <div className="gradient-04 z-0 absolute"></div>
 
       {/* header */}
-      <div className="flex flex-row items-center justify-center content-center self-center">
+     
         <div className="uppercase font-bold  text-2xl text-center mb-3">
-          Summon
+          Summon 💬
         </div>
-        <img
-            src="./assets/icon-sem-fundo.png"
-            width={60}
-            className="img"
-          />
-      </div>
+       
 
       {/* body */}
       <div
