@@ -26,6 +26,7 @@ const ChatInput = ({ sendMessage, loading }) => {
             className="border-0 bg-transparent outline-none w-11/12"
             value={value}
             type="text"
+            placeholder="Escreva algo aqui..."
             onChange={(e) => setValue(e.target.value)}
           />
 
