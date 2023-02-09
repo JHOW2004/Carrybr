@@ -12,7 +12,7 @@
 
 .gradient-01 {
   position: absolute;
-  width: 200px;
+  width: 300px;
   height: 300px;
   top: 0;
   left: 0;
@@ -33,12 +33,12 @@
 
 .gradient-03 {
   position: absolute;
-  width: 200px;
+  width: 300px;
   height: 300px;
-  top: -6rem;
+  top: 0;
   right: 0px;
   background: #830bf3;
-  filter: blur(190px)
+  filter: blur(150px)
 }
 
 .gradient-04 {
@@ -47,11 +47,15 @@
   height: 200px;
   bottom:0;
   left: 0px; 
-  background: #01ffaa;
+  background: #01fff2;
   margin-top: 10px;
-  filter: blur(160px)
+  filter: blur(140px)
 }
 
-.color-text {
-  color: #FFF,
+.gradient-05 {
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  background: #0b0c0c;
+  filter: blur(140px)
 }
