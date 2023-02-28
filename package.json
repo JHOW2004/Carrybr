@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@formkit/auto-animate": "^1.0.0-beta.6",
+    "@lottiefiles/react-lottie-player": "^3.5.2",
     "react": "^18.2.0",
     "react-animated-css": "^1.2.1",
     "react-dom": "^18.2.0",

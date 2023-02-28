@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { Player} from '@lottiefiles/react-lottie-player';
 
 const ChatInput = ({ sendMessage, loading }) => {
   const [value, setValue] = useState("");
@@ -15,7 +16,12 @@ const ChatInput = ({ sendMessage, loading }) => {
     py-4 overflow-auto relative"
     >
       {loading ? (
-        <img src="https://firebasestorage.googleapis.com/v0/b/teste-5e945.appspot.com/o/Logos%2Floader.gif?alt=media&token=187980e2-bd25-4262-b6b7-64d3e22df0ec" className="w-8 m-auto" />
+        <Player
+        autoplay
+        loop
+        src="https://lottie.host/f4492fcd-a7e3-4953-85b5-b92754ffea8d/ZCwNs61vjC.json"
+        style={{ height: '30px', width: '30px' }}
+      />
       ) : (
         <>
           <textarea
