@@ -19,7 +19,7 @@ const ChatInput = ({ sendMessage, loading }) => {
         <Player
         autoplay
         loop
-        src="https://lottie.host/f4492fcd-a7e3-4953-85b5-b92754ffea8d/ZCwNs61vjC.json"
+        src="https://lottie.host/d21d0df7-eace-4148-8b07-3da27efb7978/3XVuCIKfgD.json"
         style={{ height: '30px', width: '30px' }}
       />
       ) : (
