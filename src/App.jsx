@@ -58,24 +58,20 @@ function App() {
         <>
           <Animated animationIn="bounceIn"  isVisible={true} animationInDuration ={1000}  className="gradient-01 z-0 absolute"></Animated>
           <Animated animationIn="bounceIn"  isVisible={true} animationInDuration ={1000} className="gradient-02 z-0 absolute"></Animated>
-          <Animated animationIn="bounceIn" isVisible={true} animationInDuration ={1000} className="gradient-03 z-0 absolute"></Animated>
           <Animated animationIn="bounceIn"  isVisible={true} animationInDuration ={1000} className="gradient-04 z-0 absolute"></Animated>
         </>
       }
 
       {larg < 821 &&
         <>
-          <Animated animationIn={ani1}  isVisible={true} animationInDuration ={10000}  className="gradient-01 z-0 absolute"></Animated>
-          <Animated animationIn={ani2}  isVisible={true} animationInDuration ={10000} className="gradient-02 z-0 absolute"></Animated>
-          <Animated animationIn={ani1} isVisible={true} animationInDuration ={10000} className="gradient-03 z-0 absolute"></Animated>
-          <Animated animationIn={ani2}  isVisible={true} animationInDuration ={10000} className="gradient-04 z-0 absolute"></Animated>
+          <Animated animationIn="bounceIn"  isVisible={true} animationInDuration ={1000} className="gradient-09 z-0 absolute"></Animated>
         </>
       }
 
       {/* header */}
      
-        <div className="uppercase font-bold  text-2xl text-center mb-3">
-          Summon 💬
+        <div className="self-center align-top content-center items-center justify-center">
+          <img src="https://firebasestorage.googleapis.com/v0/b/enviodetareas-58e5d.appspot.com/o/Carry%20(3).png?alt=media&token=6b7b8887-d99b-4ec7-bef4-de01795ace92" width="250" height="144.5"/>
         </div>
        
 
