@@ -1,0 +1,182 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Eudoxus Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.gradient-01 {
+  position: absolute;
+  width: 200px;
+  height:100px;
+  top: 0;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  justify-content: center;
+  background: #e9fa00;
+  filter: blur(160px);
+}
+.gradient-02 {
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  bottom:0;
+  right: 0px; 
+  background: #eeeeee;
+  margin-top: 10px;
+  filter: blur(190px)
+}
+
+.gradient-04 {
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  bottom:0;
+  left: 0px; 
+  background: #01fff2;
+  margin-top: 10px;
+  filter: blur(190px)
+}
+
+.gradient-09 {
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  bottom:0;
+  background: #01fff2;
+  filter: blur(210px)
+}
+
+
+.loader {
+  position: relative;
+  height: 30px;
+  width: 6px;
+  color: #FFF;
+  animation: paddles 0.75s ease-out infinite;
+}
+
+.loader:before {
+  content: "";
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 15px;
+  width: 12px;
+  height: 12px;
+  background-color: rgb(0, 217, 255);
+  border-radius: 50%;
+  animation: ballbounce 0.6s ease-out infinite;
+}
+
+
+.card {
+  --background: linear-gradient(to right, #ffffff 0%, #e5ff00 70%);
+  width: auto;
+  height: auto;
+  padding: 5px;
+  border-radius: 1rem;
+  overflow: visible;
+  background: #e5ff00;
+  background: var(--background);
+  position: relative;
+  z-index: 1;
+ }
+ 
+ .card::after {
+  position: absolute;
+  content: "";
+  top: 30px;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 70%;
+  width: 100%;
+  transform: scale(0.9);
+  filter: blur(20px);
+  background: #e5ff00;
+  background: var(--background);
+  transition: opacity .2s;
+ }
+
+ .card-info {
+  background: #181818;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  border-radius: .7rem;
+  padding: 20px;
+ }
+
+
+ .card2 {
+  --background: linear-gradient(to right, #00f7ff 0%, #ffffff 70%);
+  width: auto;
+  height: auto;
+  padding: 3px;
+  border-radius: 1rem;
+  overflow: visible;
+  background: #00f7ff;
+  background: var(--background);
+  position: relative;
+  z-index: 1;
+ }
+ 
+ .card2::after {
+  position: absolute;
+  content: "";
+  top: 30px;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 70%;
+  width: 100%;
+  transform: scale(0.9);
+  filter: blur(20px);
+  background: #00f7ff;
+  background: var(--background);
+  transition: opacity .2s;
+ }
+
+@keyframes paddles {
+  0% {
+    box-shadow: -25px -10px, 25px 10px
+  }
+
+  50% {
+    box-shadow: -25px 8px, 25px -10px
+  }
+
+  100% {
+    box-shadow: -25px -10px, 25px 10px
+  }
+}
+
+@keyframes ballbounce {
+  0% {
+    transform: translateX(-20px) scale(1, 1.2)
+  }
+
+  25% {
+    transform: scale(1.2, 1)
+  }
+
+  50% {
+    transform: translateX(15px) scale(1, 1.2)
+  }
+
+  75% {
+    transform: scale(1.2, 1)
+  }
+
+  100% {
+    transform: translateX(-20px)
+  }
+}
