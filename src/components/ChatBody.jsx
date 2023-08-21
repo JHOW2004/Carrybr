@@ -5,7 +5,7 @@ import { useEffect } from "react";
 
 const ChatBody = ({ chat }) => {
   const aiStyle =
-    "bg-white bg-opacity-40 backdrop-blur-lg dropshadow-md mr-auto";
+    "card2 backdrop-blur-lg dropshadow-md mr-auto indent-8";
 
     const parent = useRef(null);
     const bottomRef = useRef(null);
@@ -21,19 +21,22 @@ const ChatBody = ({ chat }) => {
     }, [chat])
 
   return (
-    <div className="flex flex-col gap-4" ref={parent}>
+    <div className="flex flex-col gap-4 m-5" ref={parent}>
       {chat.map((message, i) => {
         return (
           <div
             key={i}
-            className={`border-[#999999] break-words border-2 rounded-xl self-end px-3 py-3 max-w-[80%] ${
+            className={`break-words rounded-xl self-end px-3 py-3 max-w-[80%] ${
               message.sender === "ai" && aiStyle
             }`}
-          >
+          ><div class={`card ${
+            message.sender === "ai" && aiStyle
+          }`}>
+            <div class="card-info">
             <pre className="whitespace-pre-wrap">
               <span>{message.message}</span>
             </pre>
-          </div>
+          </div></div></div>
         );
       })}
 

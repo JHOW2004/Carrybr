@@ -12,6 +12,7 @@ function App() {
   const [larg, setLarg] = useState(null)
   const [ani1, setAni1] = useState("slideInUp")
   const [ani2, setAni2] = useState("slideInDown")
+  
 
   setInterval(() => {
     var altura = window.screen.height;
