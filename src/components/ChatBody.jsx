@@ -5,7 +5,7 @@ import { useEffect } from "react";
 
 const ChatBody = ({ chat }) => {
   const aiStyle =
-    "card2 backdrop-blur-lg dropshadow-md mr-auto indent-8";
+    "card2 backdrop-blur-lg dropshadow-md mr-auto";
 
     const parent = useRef(null);
     const bottomRef = useRef(null);
